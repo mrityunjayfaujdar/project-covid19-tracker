@@ -22,6 +22,7 @@ class App extends React.Component {
     const data = await fetchData(country);
 
     this.setState({ data, country: country });
+    console.log("countryChange Logged.");
   };
 
   render() {
